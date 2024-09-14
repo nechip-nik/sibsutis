@@ -1,0 +1,44 @@
+1 keyword +
+2 syms () {} [] +
+3 Indent +
+4 number +
+5 strings
+6 COMMENTS
+<INITIAL>"--"   {BEGIN(COMMENT_INLINE);}
+<COMMENT_INLINE>[^\n]+ {}
+<COMMENT_INLINE><<EOF>> {BEGIN(INITIAL);}
+<COMMENT_INLINE>\n      {lineno++;
+                        BEGIN(INITIAL);
+                        }
+
+<INITIAL>"(*"  {comment_level++;
+                BEGIN(COMMENT);
+                }
+<COMMENT>"*)"  {comment_level--;
+                if(comment_level==0)
+                    BEGIN(INITIAL);
+                }
+<COMMENT>\n         {lineno++;}
+
+<COMMENT>[^\n*()]*     {}
+<COMMENT>[*()]*          {}
+<COMMENT><<EOF>> {BEGIN(INITIAL);
+                 Error("Error");
+                }
+")*"            {Error("Wrong comment close-bracket"); BEGIN(INITIAL);}
+
+________________________________________________
+
+
+<INITIAL>--.*\n     { ++lineno; }
+<INITIAL>"*)"       { Error("Wrong comment close-bracket"); BEGIN(INITIAL); return ERROR; }
+<INITIAL>"(*"       { BEGIN(COMMENT); comment_depth = 0; }
+<COMMENT>"(*"       { ++comment_depth; }
+<COMMENT><<EOF>>    { Error("Unterminated comment"); BEGIN(INITIAL); return ERROR; }
+<COMMENT>\n         { ++lineno; }
+<COMMENT>[^\n*(]*   { }
+<COMMENT>[*()]      { }
+<COMMENT>"*)"       {
+                      if (comment_depth == 0) BEGIN(INITIAL);
+                      --comment_depth;
+                    }
