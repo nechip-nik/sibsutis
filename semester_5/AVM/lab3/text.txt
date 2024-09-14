@@ -1,0 +1,9 @@
+https://www.ibm.com/docs/ru/control-desk/7.6.1.1?topic=begin-setting-ulimit
+cat /etc/nginx/nginx.conf | grep "worker_processes"
+ps aux | grep nginx | wc -l
+sudo cat /etc/security/limits.conf
+ulimit -u(Эта команда выведет текущий максимальный лимит на количество открытых файловых дескрипторов.)
+
+sudo docker run -it -d --name web-server -p 3000:80 nginx
+ps ax --forest
+nproc
