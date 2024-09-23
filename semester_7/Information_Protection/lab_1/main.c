@@ -37,28 +37,23 @@ int main() {
       break;
     }
     case '3': {
-      unsigned long p, g; // Общедоступные (публичные) параметры
-      unsigned long a, b; // Секретные ключи абонентов
-      unsigned long A, B; // Открытые ключи абонентов
-      unsigned long secret_key_A, secret_key_B; // Общие секретные ключи
+      unsigned long p, g;
+      unsigned long a, b;
+      unsigned long A, B;
+      unsigned long secret_key_A, secret_key_B;
 
-      // Выбираем большое простое число p и генератор g
-      p = 19; // Пример простого числа
-      g = 2;  // Пример генератора
+      p = 19;
+      g = 2;
 
-      // Выбираем секретные ключи для каждого абонента
-      a = 5; // Секретный ключ абонента A
-      b = 7; // Секретный ключ абонента B
+      a = 5;
+      b = 7;
 
-      // Вычисляем открытые ключи для каждого абонента
-      A = mod_exp(g, a, p); // Открытый ключ абонента A
-      B = mod_exp(g, b, p); // Открытый ключ абонента B
+      A = mod_exp(g, a, p);
+      B = mod_exp(g, b, p);
 
-      // Вычисляем общие секретные ключи
-      secret_key_A = mod_exp(B, a, p); // Общий ключ для абонента A
-      secret_key_B = mod_exp(A, b, p); // Общий ключ для абонента B
+      secret_key_A = mod_exp(B, a, p);
+      secret_key_B = mod_exp(A, b, p);
 
-      // Проверяем, что оба абонента получили одинаковый ключ
       if (secret_key_A == secret_key_B) {
         printf("Общий секретный ключ: %lu\n", secret_key_A);
         break;
@@ -68,19 +63,18 @@ int main() {
       }
     }
     case '4': {
-      unsigned long long g, h, p;
-      printf("Введите g, h, p: ");
-      if (scanf("%llu %llu %llu", &g, &h, &p) != 3) {
-        printf("Ошибка ввода\n");
-        return 1;
-      }
+      int base = 5;
+      int target = 4;
+      int mod = 7;
+      int m = 2;
+      int k = 4;
 
-      unsigned long long result = baby_step_giant_step(g, h, p);
+      int result = discrete_log(base, target, mod, m, k);
       if (result != -1) {
-        printf("Дискретный логарифм: %llu\n", result);
+        printf("Решение найдено: x = %d\n", result);
         break;
       } else {
-        printf("Дискретный логарифм не найден\n");
+        printf("Решение не найдено.\n");
         break;
       }
     }

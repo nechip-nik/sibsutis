@@ -21,52 +21,52 @@ unsigned long mod_exp(unsigned long base, unsigned long exp,
   return result;
 }
 long extended_gcd(long a, long b, long *x, long *y) {
-  // Базовый случай
   if (a == 0) {
     *x = 0;
     *y = 1;
     return b;
   }
 
-  // Переменные для хранения результатов рекурсивного вызова
   long x1, y1;
   long gcd = extended_gcd(b % a, a, &x1, &y1);
 
-  // Обновляем x и y, используя результаты рекурсивного вызова
   *x = y1 - (b / a) * x1;
   *y = x1;
 
   return gcd;
 }
-unsigned long long baby_step_giant_step(unsigned long long g,
-                                        unsigned long long h,
-                                        unsigned long long p) {
-  unsigned long long m = (unsigned long long)sqrt(p) + 1;
-  unsigned long long g_inv =
-      mod_exp(g, p - 2, p); // Вычисляем обратный элемент g по модулю p
+int discrete_log(int base, int target, int mod, int m, int k) {
+  int n = (int)sqrt(mod) + 1;
+  int giant_step = mod_exp(base, n, mod);
 
-  // Создаем таблицу для хранения значений (g^j, j) для j от 0 до m-1
-  unsigned long long *baby_steps =
-      (unsigned long long *)malloc(m * sizeof(unsigned long long));
-  for (unsigned long long j = 0; j < m; j++) {
-    baby_steps[j] = mod_exp(g, j, p);
+  int *baby_steps = (int *)malloc(sizeof(int) * m);
+  for (int i = 0; i < m; i++) {
+    baby_steps[i] = -1;
   }
 
-  // Вычисляем g^(-m)
-  unsigned long long g_inv_m = mod_exp(g_inv, m, p);
-
-  // Ищем совпадение в таблице
-  unsigned long long h_i = h;
-  for (unsigned long long i = 0; i < m; i++) {
-    // Проверяем, есть ли h_i в таблице baby_steps
-    for (unsigned long long j = 0; j < m; j++) {
-      if (baby_steps[j] == h_i) {
-        free(baby_steps);
-        return i * m + j;
+  int current = target;
+  for (int j = 0; j < n; j++) {
+    for (int i = 0; i < m; i++) {
+      if (baby_steps[i] == -1) {
+        baby_steps[i] = current;
+        break;
+      } else if (baby_steps[i] == current) {
+        break;
       }
     }
-    // Обновляем h_i
-    h_i = (h_i * g_inv_m) % p;
+    current = (current * base) % mod;
+  }
+
+  current = 1;
+  for (int i = 0; i < n; i++) {
+    int giant_step_value = current;
+    for (int j = 0; j < m; j++) {
+      if (baby_steps[j] == giant_step_value) {
+        free(baby_steps);
+        return i * n + j;
+      }
+    }
+    current = (current * giant_step) % mod;
   }
 
   free(baby_steps);
