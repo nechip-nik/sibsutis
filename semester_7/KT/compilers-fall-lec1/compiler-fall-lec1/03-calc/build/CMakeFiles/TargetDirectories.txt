@@ -1,0 +1,9 @@
+/home/nikita/sibsutis/semester_7/KT/compilers-fall-lec1/compiler-fall-lec1/03-calc/build/CMakeFiles/intrinsics_gen.dir
+/home/nikita/sibsutis/semester_7/KT/compilers-fall-lec1/compiler-fall-lec1/03-calc/build/CMakeFiles/omp_gen.dir
+/home/nikita/sibsutis/semester_7/KT/compilers-fall-lec1/compiler-fall-lec1/03-calc/build/CMakeFiles/acc_gen.dir
+/home/nikita/sibsutis/semester_7/KT/compilers-fall-lec1/compiler-fall-lec1/03-calc/build/CMakeFiles/RISCVTargetParserTableGen.dir
+/home/nikita/sibsutis/semester_7/KT/compilers-fall-lec1/compiler-fall-lec1/03-calc/build/CMakeFiles/edit_cache.dir
+/home/nikita/sibsutis/semester_7/KT/compilers-fall-lec1/compiler-fall-lec1/03-calc/build/CMakeFiles/rebuild_cache.dir
+/home/nikita/sibsutis/semester_7/KT/compilers-fall-lec1/compiler-fall-lec1/03-calc/build/src/CMakeFiles/calc.dir
+/home/nikita/sibsutis/semester_7/KT/compilers-fall-lec1/compiler-fall-lec1/03-calc/build/src/CMakeFiles/edit_cache.dir
+/home/nikita/sibsutis/semester_7/KT/compilers-fall-lec1/compiler-fall-lec1/03-calc/build/src/CMakeFiles/rebuild_cache.dir
