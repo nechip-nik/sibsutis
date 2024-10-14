@@ -435,6 +435,8 @@ bool Parser::parseExpression(Expr *&E) {
       return _errorhandler();
     if (parseSimpleExpression(Right))
       return _errorhandler();
+      if (parseSimpleExpression(Right))
+      return _errorhandler();
     E = Actions.actOnExpression(E, Right, Op);
   }
   return false;

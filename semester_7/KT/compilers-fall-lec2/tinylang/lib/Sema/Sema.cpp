@@ -55,7 +55,7 @@ void Sema::checkFormalAndActualParameters(
               err_type_of_formal_and_actual_parameter_not_compatible);
     if (F->isVar() && isa<VariableAccess>(Arg))
       Diags.report(Loc,
-                   diag::err_var_parameter_requires_var);
+                   diag::err_var_parameter_requires_var);c
   }
 }
 

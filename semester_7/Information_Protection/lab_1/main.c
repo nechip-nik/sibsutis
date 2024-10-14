@@ -63,9 +63,9 @@ int main() {
       }
     }
     case '4': {
-      int base = 5;
-      int target = 4;
-      int mod = 7;
+      int base = 23;
+      int target = 55;
+      int mod = 23;
       int m = 2;
       int k = 4;
 
