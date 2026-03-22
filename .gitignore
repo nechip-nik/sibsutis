@@ -1,0 +1,5 @@
+rgr/kubectl
+rgr/minikube-linux-amd64
+*.exe
+*.iso
+*.bin
