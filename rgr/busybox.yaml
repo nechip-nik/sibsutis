@@ -1,0 +1,29 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: busybox-interactive
+  labels:
+    app: busybox
+spec:
+  containers:
+  - name: busybox1  
+    image: busybox:latest
+    imagePullPolicy: IfNotPresent
+    command: ["/bin/sh", "-c"]
+    args:
+      - |
+        echo "Hostname1: $(hostname)"
+        exec /bin/sh
+    stdin: true
+    tty: true
+  - name: busybox2  
+    image: busybox:latest
+    imagePullPolicy: IfNotPresent
+    command: ["/bin/sh", "-c"]
+    args:
+      - |
+        echo "Hostname2: $(hostname)"
+        exec /bin/sh
+    stdin: true
+    tty: true
+  restartPolicy: Never

@@ -29,6 +29,6 @@ set key left
 set format x "2^{%L}"
 
 # Строим график с несколькими линиями и разными стилями
-plot 'separate.txt' with linespoints lw 2 lt rgb "blue" title '1x8 Separate CPUs', \
-     'single.txt' with linespoints lw 2 lt rgb "red" title '1x8 Single CPU', \
-     'separate_note.txt' with linespoints lw 2 lt rgb "green" title '2x4 Separate nodes'
+plot 'separate.txt' with linespoints lw 2 lt rgb "blue" title '1x4 Separate CPUs', \
+     'single.txt' with linespoints lw 2 lt rgb "red" title '1x4 Single CPU', \
+     'separate_note.txt' with linespoints lw 2 lt rgb "green" title '2x2 Separate nodes'

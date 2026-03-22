@@ -1,0 +1,13 @@
+/home/nikita/sibsutis/semester_7/KT/lab_6/compilers-fall-lec6/callprofiler/build/CMakeFiles/intrinsics_gen.dir
+/home/nikita/sibsutis/semester_7/KT/lab_6/compilers-fall-lec6/callprofiler/build/CMakeFiles/omp_gen.dir
+/home/nikita/sibsutis/semester_7/KT/lab_6/compilers-fall-lec6/callprofiler/build/CMakeFiles/acc_gen.dir
+/home/nikita/sibsutis/semester_7/KT/lab_6/compilers-fall-lec6/callprofiler/build/CMakeFiles/RISCVTargetParserTableGen.dir
+/home/nikita/sibsutis/semester_7/KT/lab_6/compilers-fall-lec6/callprofiler/build/CMakeFiles/CallProfiler.dir
+/home/nikita/sibsutis/semester_7/KT/lab_6/compilers-fall-lec6/callprofiler/build/CMakeFiles/install-CallProfiler.dir
+/home/nikita/sibsutis/semester_7/KT/lab_6/compilers-fall-lec6/callprofiler/build/CMakeFiles/install-CallProfiler-stripped.dir
+/home/nikita/sibsutis/semester_7/KT/lab_6/compilers-fall-lec6/callprofiler/build/CMakeFiles/edit_cache.dir
+/home/nikita/sibsutis/semester_7/KT/lab_6/compilers-fall-lec6/callprofiler/build/CMakeFiles/rebuild_cache.dir
+/home/nikita/sibsutis/semester_7/KT/lab_6/compilers-fall-lec6/callprofiler/build/CMakeFiles/list_install_components.dir
+/home/nikita/sibsutis/semester_7/KT/lab_6/compilers-fall-lec6/callprofiler/build/CMakeFiles/install.dir
+/home/nikita/sibsutis/semester_7/KT/lab_6/compilers-fall-lec6/callprofiler/build/CMakeFiles/install/local.dir
+/home/nikita/sibsutis/semester_7/KT/lab_6/compilers-fall-lec6/callprofiler/build/CMakeFiles/install/strip.dir

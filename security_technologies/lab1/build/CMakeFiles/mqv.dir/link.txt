@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/mqv.dir/src/main_mqv.cpp.o CMakeFiles/mqv.dir/src/crypto_utils.cpp.o -o mqv  -lgmp 

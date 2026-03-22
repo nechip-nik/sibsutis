@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/benchmark_simple.dir/src/benchmark_simple.cpp.o CMakeFiles/benchmark_simple.dir/src/crypto_utils.cpp.o -o benchmark_simple  -lgmp 

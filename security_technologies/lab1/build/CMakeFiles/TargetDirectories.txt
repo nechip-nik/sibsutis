@@ -1,0 +1,9 @@
+/home/nikita/MAGA/security_technologies/lab1/build/CMakeFiles/generate_params.dir
+/home/nikita/MAGA/security_technologies/lab1/build/CMakeFiles/dh_original.dir
+/home/nikita/MAGA/security_technologies/lab1/build/CMakeFiles/dh_subgroup.dir
+/home/nikita/MAGA/security_technologies/lab1/build/CMakeFiles/mqv.dir
+/home/nikita/MAGA/security_technologies/lab1/build/CMakeFiles/server.dir
+/home/nikita/MAGA/security_technologies/lab1/build/CMakeFiles/client.dir
+/home/nikita/MAGA/security_technologies/lab1/build/CMakeFiles/benchmark_simple.dir
+/home/nikita/MAGA/security_technologies/lab1/build/CMakeFiles/edit_cache.dir
+/home/nikita/MAGA/security_technologies/lab1/build/CMakeFiles/rebuild_cache.dir

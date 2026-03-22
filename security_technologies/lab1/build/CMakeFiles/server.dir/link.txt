@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/server.dir/src/network_server.cpp.o CMakeFiles/server.dir/src/crypto_utils.cpp.o -o server  -lgmp 

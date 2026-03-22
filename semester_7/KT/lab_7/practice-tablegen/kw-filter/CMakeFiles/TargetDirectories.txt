@@ -1,0 +1,7 @@
+/home/nikita/sibsutis/semester_7/KT/lab_7/practice-tablegen/kw-filter/CMakeFiles/intrinsics_gen.dir
+/home/nikita/sibsutis/semester_7/KT/lab_7/practice-tablegen/kw-filter/CMakeFiles/omp_gen.dir
+/home/nikita/sibsutis/semester_7/KT/lab_7/practice-tablegen/kw-filter/CMakeFiles/acc_gen.dir
+/home/nikita/sibsutis/semester_7/KT/lab_7/practice-tablegen/kw-filter/CMakeFiles/RISCVTargetParserTableGen.dir
+/home/nikita/sibsutis/semester_7/KT/lab_7/practice-tablegen/kw-filter/CMakeFiles/tinylang-tblgen.dir
+/home/nikita/sibsutis/semester_7/KT/lab_7/practice-tablegen/kw-filter/CMakeFiles/edit_cache.dir
+/home/nikita/sibsutis/semester_7/KT/lab_7/practice-tablegen/kw-filter/CMakeFiles/rebuild_cache.dir

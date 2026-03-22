@@ -1,0 +1,27 @@
+
+# Consider dependencies only in project.
+set(CMAKE_DEPENDS_IN_PROJECT_ONLY OFF)
+
+# The set of languages for which implicit dependencies are needed:
+set(CMAKE_DEPENDS_LANGUAGES
+  )
+
+# The set of dependency files which are needed:
+set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/nikita/sibsutis/semester_7/KT/compilers-fall-lec5/src-tinylang/lib/CodeGen/CGDebugInfo.cpp" "lib/CodeGen/CMakeFiles/tinylangCodeGen.dir/CGDebugInfo.cpp.o" "gcc" "lib/CodeGen/CMakeFiles/tinylangCodeGen.dir/CGDebugInfo.cpp.o.d"
+  "/home/nikita/sibsutis/semester_7/KT/compilers-fall-lec5/src-tinylang/lib/CodeGen/CGModule.cpp" "lib/CodeGen/CMakeFiles/tinylangCodeGen.dir/CGModule.cpp.o" "gcc" "lib/CodeGen/CMakeFiles/tinylangCodeGen.dir/CGModule.cpp.o.d"
+  "/home/nikita/sibsutis/semester_7/KT/compilers-fall-lec5/src-tinylang/lib/CodeGen/CGProcedure.cpp" "lib/CodeGen/CMakeFiles/tinylangCodeGen.dir/CGProcedure.cpp.o" "gcc" "lib/CodeGen/CMakeFiles/tinylangCodeGen.dir/CGProcedure.cpp.o.d"
+  "/home/nikita/sibsutis/semester_7/KT/compilers-fall-lec5/src-tinylang/lib/CodeGen/CGTBAA.cpp" "lib/CodeGen/CMakeFiles/tinylangCodeGen.dir/CGTBAA.cpp.o" "gcc" "lib/CodeGen/CMakeFiles/tinylangCodeGen.dir/CGTBAA.cpp.o.d"
+  "/home/nikita/sibsutis/semester_7/KT/compilers-fall-lec5/src-tinylang/lib/CodeGen/CodeGenerator.cpp" "lib/CodeGen/CMakeFiles/tinylangCodeGen.dir/CodeGenerator.cpp.o" "gcc" "lib/CodeGen/CMakeFiles/tinylangCodeGen.dir/CodeGenerator.cpp.o.d"
+  )
+
+# Targets to which this target links which contain Fortran sources.
+set(CMAKE_Fortran_TARGET_LINKED_INFO_FILES
+  )
+
+# Targets to which this target links which contain Fortran sources.
+set(CMAKE_Fortran_TARGET_FORWARD_LINKED_INFO_FILES
+  )
+
+# Fortran module output directory.
+set(CMAKE_Fortran_TARGET_MODULE_DIR "")
