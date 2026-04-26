@@ -1,0 +1,11 @@
+./file_transfer --server --port 8080 
+
+
+-----------------------------
+
+# Установить переменные
+KEY=$(openssl rand -hex 32)
+IV=$(openssl rand -hex 16)
+
+# Выполнить команду (можно без переносов строк)
+./file_transfer --client --ip 127.0.0.1 --port 8080 --file myfile.txt --key $KEY --iv $IV

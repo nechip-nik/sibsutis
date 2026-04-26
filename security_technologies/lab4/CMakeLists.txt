@@ -1,0 +1,12 @@
+cmake_minimum_required(VERSION 3.10)
+project(HashEncrypt)
+
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -O2")
+
+add_executable(file_transfer 
+    file_transfer.cpp
+    sha3.cpp
+    utils.cpp
+)
