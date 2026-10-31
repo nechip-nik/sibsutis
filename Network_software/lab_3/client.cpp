@@ -18,8 +18,7 @@ int main(int argc, char* argv[]) {
         tcp::socket socket(io_context);
         boost::asio::connect(socket, endpoints);
 
-        std::cout << "Подключение установлено. Введите сообщение "
-                     "(Ctrl+D — выход):" << std::endl;
+        std::cout << "Подключение установлено. Введите сообщение "<< std::endl;
 
         std::string line;
         while (std::getline(std::cin, line)) {

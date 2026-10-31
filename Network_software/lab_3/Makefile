@@ -1,5 +1,5 @@
 G++ = g++
-CFLAGS = -Wall -Wextra -lboost_system -lpthread
+CFLAGS = -Wall -Wextra  -lpthread
 TARGETS = server client
 
 all: $(TARGETS)
