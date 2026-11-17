@@ -71,7 +71,7 @@ int main(void)
     int c[] = {8, 14, 20};
     int m[] = {2, 1, 3};
     int k = 3;
-    int W = 16000000;
+    int W = 16;
 
     bounded_knapsack(W, n, c, m, k);
     return 0;
